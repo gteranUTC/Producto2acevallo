@@ -1,0 +1,24 @@
+@(platos: java.util.List[Plato])
+
+<html>
+<head>
+<body>
+	<table cellspacing="1"  border="2px">
+		    <tr>
+		    	<th >NOMBRE DEL PLATO</th>
+		    	<th>TIPO</th>
+		    	<th >PRECIO</th>
+		    	<th >INGREDIENTES</th>
+		    </tr>
+			@for(plato <- platos) {		   
+			  <tr>
+			      <td>@plato.nombre</td>
+			      <td>@plato.tipo</td>
+			      <td>@plato.precio</td>
+			      <td>@plato.ingrediente</td>
+		      </tr>	
+		      }
+		 </table>
+</body>
+</head>
+</html>
